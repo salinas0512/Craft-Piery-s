@@ -1,2 +1,2 @@
 # Craft-Piery-s
-Proyecto para asignatura Diseño Web usando lenguaje HTML.
+Proyecto para asignatura Diseño Web usando lenguaje HTML y CSS.
