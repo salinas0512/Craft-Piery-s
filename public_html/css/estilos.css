@@ -1,0 +1,185 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #9bcf9b 30%, #d16ba5 70%);
+    color: #333;
+}
+
+/* Encabezado principal */
+.texto_encabezado{
+  display: flex;
+  flex-direction: column;
+  margin: 10px
+}
+.encabezado{
+    background-color:#ffffff; 
+    margin: 0;
+    display:flex;
+    border-bottom: 2px solid #b7b7b7;
+}
+.cabecera{
+
+}
+.logo_principal{
+    display: block;
+    margin: 10px;
+    width: 80px;
+}
+.logo_2{
+    margin-left: auto;
+    width: 80px;
+    margin-right: 125px
+}
+.frase_encabezado{
+    color:#46c6a5;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    font-family: 'Georgia',serif;
+    font-weight:300;
+    font-style: italic
+}
+.titulo_principal{
+    color:#d16ba5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    margin: 0;
+    margin-left:70px
+}
+.contenido{
+    padding: 20px; 
+}
+.texto-con-imagen {
+  background-image: url("../imagenes/imagen1.png");
+  background-size: cover; /* Asegura que cubra todo el div */
+  background-repeat: no-repeat;
+  background-position: 0px -120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  min-height: 320px; /* Aumentamos la altura mínima */
+  transition: transform 0.5s ease-in-out;
+}
+.texto-con-imagen:hover {
+    transform: scale(1.02); /* Un ligero zoom */
+    transition: transform 0.5s ease-in-out;
+}
+
+.img1 img {
+  width: 300px;
+  border-radius: 8px;
+}
+.presentacion{
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 21px;
+    font-family: 'Georgia',serif;
+    border-radius: 4px;
+    font-style: italic;
+    
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #ffffff;
+    margin-top: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
+}
+.icon_rss {
+  margin-right: 8px;
+  position: relative;
+  top: 3px; /* Ajustá este valor según lo que necesites */
+}
+     
+/* Sección de productos */
+img[alt="atrapaSueno"],
+img[alt="PortaIncienso"],
+img[alt="vela"] {
+    margin: 10px;
+    border: 3px solid #c49e85;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Párrafos generales */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #2E604A
+}
+
+/* Lista de redes sociales */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #d16ba5, #9bcf9b);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+li a:hover {
+    background:#9bcf9b 
+}
+
+/* Ejemplo de uso de clase */
+.destacado {
+    background-color: #ffe6d0;
+    border-left: 5px solid #b5694f;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Selector por ID */
+#sabias {
+    background-color: #fff5eb;
+    padding: 15px;
+    border: 1px dashed #c49e85;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.derechos-reservados{
+    margin: 20px;
+    border-top: 1px solid #b7b7b7;
+    text-align: center;
+    padding:20px;
+    color : #747474
+}
+.resaltable {
+  transition: background-color 0.6s ease;
+}
+
+/* Efecto de resalte cuando se navega a la sección */
+.resaltable:target {
+  background-color: #a1eaa1; /* Color sutil para destacar */
+  outline: 2px solid #ff69b4; /* Un contorno rosado */
+  border-radius: 8px;
+}
+
+.logo_enlace:active img {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+  transform: scale(0.98); /* Reduce un poco el tamaño al presionar */
+  transition: box-shadow 1s ease, transform 1s ease; /* Transición más suave y lenta */
+}
+.logo_enlace:hover img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  transform: scale(1.05); /* Ligeramente agrandar el logo */
+  transition: box-shadow 1s ease, transform 1s ease; /* Transición lenta */
+}
